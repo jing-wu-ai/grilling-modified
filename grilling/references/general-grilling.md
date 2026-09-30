@@ -17,7 +17,7 @@ Check vague keywords, hidden premises, evidence sources, plausible contrary expl
 
 Ask in rounds of up to the two highest-value independent frontier questions. If only one material question remains, or the second depends on the first answer, ask only the prerequisite question. Do not impose a total question limit.
 
-Before the first round, state the tentative understanding based on the investigation. Before each later round, state in one sentence what the previous answers changed in that understanding.
+Before the first round, state the tentative understanding based on the investigation. Before each later round, run the between-rounds consistency check and replanning steps in SKILL.md, including stating in one sentence what the previous answers changed in that understanding.
 
 Do not give advice or recommend an answer while the real problem is still being elicited.
 
@@ -38,12 +38,12 @@ Ask the user to confirm the new question before giving a judgment. If framing on
 
 Build and prune a design tree around the confirmed or stable question. Ask in rounds of up to two independent frontier questions. A dependent question belongs to a later round.
 
-After each round, update the evidence map and reassess practical 95% confidence. Continue only while another answer could materially change the solution. There is no fixed total question count.
+After each round, update the evidence map and decision ledger, run the between-rounds steps in SKILL.md, and reassess practical 95% confidence. Continue only while another answer could materially change the solution. There is no fixed total question count.
 
 When the threshold is met, provide:
 
 1. the judgment or proposed solution;
 2. the reasons and evidence supporting it;
 3. the conditions under which it applies;
-4. material assumptions or limits;
+4. material assumptions, limits, and any tensions the user chose to accept;
 5. the next concrete action.

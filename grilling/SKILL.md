@@ -1,6 +1,6 @@
 ---
 name: grilling
-description: Investigate context, clarify an unclear problem, stress-test a plan or idea, or compare two real options through focused questioning until the solution is decision-ready. Use when the user wants rigorous questioning or uses a grill trigger phrase.
+description: Investigate context, clarify an unclear problem, stress-test a plan or idea, or compare two real options through focused questioning, flagging contradictions between the user's answers, until the solution is decision-ready. Use when the user wants rigorous questioning or uses a grill trigger phrase.
 ---
 
 Investigate first, then ask only questions that can materially change the problem definition, conclusion, recommendation, risk, or next action. Rigor comes from evidence and question quality, not from a fixed number of questions.
@@ -67,7 +67,46 @@ Before asking each question, apply this gate:
 
 If investigation is still running, continue with independent questions only; defer downstream questions until the evidence arrives.
 
-Before each new round after the first, state in one sentence what the previous answers changed in the working judgment. If they changed nothing, say why and either ask a genuinely different material question or stop.
+## Between rounds: check consistency, then replan
+
+After every answer round and before any new question, work through these steps in order.
+
+### 1. Check new answers against everything already settled
+
+Keep an internal **decision ledger**: every settled answer, recorded as the decision plus the priority or trade-off it implies. For example, "ship in three months" implies speed over completeness; "keep it cheap" implies cost over convenience. Add each new answer to the ledger and compare it with every earlier entry, not only the previous round. Look for:
+
+- **Direct conflict** — two answers cannot both be true.
+- **Competing priorities** — two answers each optimize for something that draws on the same limited time, money, attention, or capacity, so both cannot be fully satisfied.
+- **Constraint breach** — decisions that each look fine alone but together exceed a stated budget, deadline, or capacity.
+- **Broken premise** — a new answer silently invalidates an assumption an earlier decision relied on.
+
+Flag every real conflict, however small; unnoticed micro-decisions are why plans stop converging. For each one, quote or closely paraphrase both statements, explain why they collide, and state what keeping each side would mean for the plan. Then ask which one wins or how the user wants to reconcile them. Do not resolve it yourself, and do not proceed as if both were true. When a new answer supersedes an earlier one, mark the earlier ledger entry as replaced.
+
+Do not manufacture conflicts. If two answers only pull in different directions without forcing a choice yet, label it a **tension**, note it in one line, and continue; raise it again only if a later answer turns it into a real conflict.
+
+### 2. Replan the next step
+
+Rebuild the frontier from the updated tree instead of following a list drafted earlier. State in one sentence what the answers changed in the working judgment; if they changed nothing, say why. Then choose the next step in this order:
+
+1. resolve any conflict found in step 1;
+2. clarify an answer too vague to settle its branch;
+3. ask the next frontier question.
+
+Among frontier questions of similar impact, ask first the one whose answer would settle or prune the most other branches. Drop questions the latest answers made unnecessary. If nothing material remains, apply the 95% stop rule instead of asking.
+
+### 3. Make vague answers concrete
+
+When an answer is too vague to settle its branch — for example "either is fine", "as much as possible", or "it depends" — do not guess its meaning. Offer two or three concrete interpretations, or a short example of what each would mean in practice, and ask the user to pick or correct one. Use examples the same way when a question itself is abstract.
+
+### 4. Close each topic with a checkpoint
+
+When a topic or major branch is settled, give a brief checkpoint before moving on:
+
+- **Settled** — decisions now fixed, including resolved conflicts;
+- **Still open** — what remains unclear, deferred, or only a tension;
+- **Possible next steps** — what the user could do or decide next.
+
+Keep it to a few lines; it is a navigation aid, not a report. Anything unconfirmed stays in the question flow.
 
 ## Ask clearly
 
@@ -88,7 +127,7 @@ Do not force a multiple-choice format when a short open answer is more natural. 
 
 ## Stop at 95% confidence
 
-After the initial investigation and after every answer round, assess whether you have at least **95% practical confidence** that you can give a useful, evidence-grounded solution. This is a decision-readiness threshold, not a mathematical probability. It is met when the real problem or decision, goal, success criteria, constraints, evidence boundary, main contrary explanations, and conclusion-changing variables are clear enough that remaining unknowns would not change the recommended direction or next action.
+After the initial investigation and after every answer round, assess whether you have at least **95% practical confidence** that you can give a useful, evidence-grounded solution. This is a decision-readiness threshold, not a mathematical probability. It is met when the real problem or decision, goal, success criteria, constraints, evidence boundary, main contrary explanations, and conclusion-changing variables are clear enough that remaining unknowns would not change the recommended direction or next action, and no unresolved conflict remains in the decision ledger.
 
 If the threshold is met, stop asking immediately and give the solution. Do not continue merely to visit every branch, eliminate harmless uncertainty, or make the interview feel complete. State any remaining assumptions or evidence limits that matter, but do not turn minor uncertainty into another question. If the threshold is already met after investigation, ask no questions at all.
 

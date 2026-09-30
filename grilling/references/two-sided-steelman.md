@@ -30,7 +30,7 @@ Do not create artificial symmetry. If the evidence for one side is weaker, repre
 
 Ask the single unanswered question most likely to change the conclusion. Briefly explain why it matters, but do not recommend how the user should answer it.
 
-After the user answers, state in one sentence what changed in the working judgment and reassess practical 95% confidence. If confidence remains below the threshold, ask the next single pivotal question. There is no fixed total question count, but ask only one at a time in this mode so each answer can reshape the comparison.
+After the user answers, run the between-rounds consistency check in SKILL.md, state in one sentence what changed in the working judgment, and reassess practical 95% confidence. If the answer conflicts with an earlier one, resolve that conflict before the next pivotal question. If confidence remains below the threshold, ask the next single pivotal question. There is no fixed total question count, but ask only one at a time in this mode so each answer can reshape the comparison.
 
 When the threshold is met, provide:
 
